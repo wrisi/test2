@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NbButton</string>
+    <string name="delete">delete</string>
+    <string name="word_list">Word List</string>
+</resources>

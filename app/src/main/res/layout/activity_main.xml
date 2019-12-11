@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/LTop"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="206dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/B3"
+                    android:textColor="@android:color/white"
+                    android:text="English"
+                    android:background="#2E3C32"/>
+                <Button
+                    android:layout_width="206dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/B4"
+                    android:textColor="@android:color/white"
+                    android:text="中文"
+                    android:background="#2E3C32"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/LTop"
+                android:id="@+id/LE"
+                android:visibility="visible"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/E1"
+                    android:textSize="30sp"
+                    android:imeOptions="actionSend"
+                    />
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/B1"
+                    android:text="search"
+                    android:textColor="@android:color/white"
+                    android:background="#2E3C32"
+                    />
+
+                <TextView
+                    android:id="@+id/T1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp" />
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/B2"
+                    android:text="add"
+                    android:textColor="@android:color/white"
+                    android:visibility="invisible"
+                    android:background="#2E3C32"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/LTop"
+                android:id="@+id/LC"
+                android:visibility="invisible"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/E2"
+                    android:textColor="#1A2929"
+                    android:textSize="30sp"
+                    android:imeOptions="actionSend"
+                    />
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/B5"
+                    android:text="翻译"
+                    android:textColor="@android:color/white"
+                    android:background="#2E3C32"
+                    />
+
+                <TextView
+                    android:id="@+id/T2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="30sp" />
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/B6"
+                    android:text="添加"
+                    android:textColor="@android:color/white"
+                    android:visibility="invisible"
+                    android:background="#2E3C32"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/WordList"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#2E3C32"
+            android:text="Word List"
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom = "true"
+            />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
